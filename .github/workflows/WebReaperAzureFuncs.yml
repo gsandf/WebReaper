@@ -1,8 +1,7 @@
 name: Build and deploy .NET Core Function App to Azure functions app
 on:
-  push:
-    branches:
-    - master
+  workflow_dispatch:
+
 env:
   AZURE_FUNCTIONAPP_NAME: WebReaperAzureFuncs
   AZURE_FUNCTIONAPP_PACKAGE_PATH: Examples/WebReaper.AzureFuncs/publish
